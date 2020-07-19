@@ -1,11 +1,16 @@
 # Internet-User-Profiling
 
+## Problem Statement
+we want to demonstrate if the Internet usage of each subject is statistically indistinguishable when compared to the Internet usage of the same subject over time, while simultaneously being statistically distinguishable when compared to Internet usage of other subjects.
+
 ## Analysis
 ### P-Value Analysis
-When we compute P-Values and measure how user’s usage is statistically similar to each other. We can see that for small time windows, the usage pattern is similar but as we increase the size of the window, count of the usage data which is statistically similar for different users is more. Below is the graphical representation where trend line is confirming the analysis which is derived by counting yes and no in the table for different time windows that was shown is previous section ( 02 ).
- 
+When we compute P-Values and measure how user’s usage is statistically similar to each other. We can see that for small time windows, the usage pattern is similar but as we increase the size of the window, count of the usage data which is statistically similar for different users is more. Below is the graphical representation where trend line is confirming the analysis which is derived by counting yes and no in the table for different time windows.
+
+![pValue](https://github.com/shilpisirohi12/Internet-User-Profiling/blob/master/p-value.png)
 
 When we see the count of users who are statistically indistinguishable from other users for different time window. We can see that it is less for smaller windows but as the size of the time window increases, the number of users who has statistically similar internet usage profile increases. Below graph shows the count of users which are similar to rest of 53 users based on p-Values. 
+![users](https://github.com/shilpisirohi12/Internet-User-Profiling/blob/master/indistinguishable-user.png)
  
 ### Spearman Rank Correlation Coefficient for the same user for different time frame(r1a2a): 
 Below is the analysis of  r1a2a for different time window. 
@@ -14,7 +19,7 @@ Below is the analysis of  r1a2a for different time window.
  There are 34 users who have positive correlation, 10 users have no correlation and 10 users have negative correlation for the internet usage of week 1 and week 2. 
 We can say that 63% of the users has similar profile for week 1 and week 2.
 Below is the graphical representation.
-
+![10Sec](https://github.com/shilpisirohi12/Internet-User-Profiling/blob/master/10-sec.png)
  
 
 
@@ -24,6 +29,7 @@ Below is the graphical representation.
  There are 38 users who have positive correlation, 10 users have no correlation and 6 users have negative correlation for the internet usage of week 1 and week 2. 
 We can say that 70% of the users has similar profile for week 1 and week 2.
 Below is the graphical representation.
+![227sec](https://github.com/shilpisirohi12/Internet-User-Profiling/blob/master/227-sec.png)
  
 
 
@@ -31,6 +37,7 @@ Below is the graphical representation.
  There are 7 users have positive correlation, 33 users have no correlation and 14 users have negative correlation for the internet usage of week 1 and week 2. 
 We can say that merely 12% of the users has similar profile for week 1 and week 2.
 Below is the graphical representation.
+![5min](https://github.com/shilpisirohi12/Internet-User-Profiling/blob/master/300-sec.png)
  
 This shows that we cannot conclude something based on Spearman’s Correlation Coefficient. We need to do more statistical computation to get some meaningful conclusion from this. That’s why we have to compute z-Value and p-Value. Also, the earlier sections of the report show that p-Value is helpful in finding the trend.
 
